@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week2 Assignment</title>
+  </head>
+  <body>
+    <!-- names of fruits -->
+    <ol type="i">
+      <h1>HTML Ordered List</h1>
+      <li>Mangos</li>
+      <li>Orange</li>
+      <li>Pineapple</li>
+      <li>Apple</li>
+      <li>Banana</li>
+    </ol>
+    <h1>HTML External Images</h1>
+    <img src="red car.jpg" alt="red car image" width="200" height="200" />
+
+    <h1>HTML Tables</h1>
+    <table border="1">
+      <caption>
+        Instructor Information
+      </caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Lagos Nigeria</td>
+          <td>1227586586</td>
+          <td>john@gmail.com</td>
+        </tr>
+        <tr>
+          <td>James</td>
+          <td>Abuja Nigeria</td>
+          <td>879756343678</td>
+          <td>james@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Victor</td>
+          <td>Benue Nigeria</td>
+          <td>786454809</td>
+          <td>victor@gmail.com</td>
+        </tr>
+
+        <tr>
+          <td>Helen</td>
+          <td>Minna Nigeria</td>
+          <td>656454809756</td>
+          <td>helen@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Agnes</td>
+          <td>Benni Nigeria</td>
+          <td>676454809756</td>
+          <td>agnes@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>HTML Forms</h1>
+    <form action="" method="">
+      <label for="name">Fullname:</label>
+      <input
+        type="text"
+        id="student_name"
+        name="student_name"
+        placeholder="write your Fullname"
+        required
+      />
+      <br /><br />
+      <label for="name">Email:<span class="required">*</span></label>
+      <input
+        type="text"
+        id="student_email"
+        name="student_email"
+        placeholder="example@gmail.com"
+        required
+      />
+      <style>
+        .required {
+          color: red;
+        }
+      </style>
+      <br /><br />
+      <label for="password">Password</label>
+      <input
+        type="text"
+        id="password"
+        name="password"
+        placeholder="input your password"
+        required
+      />
+      <br /><br />
+      <label for="dob">Date of Birth:</label>
+      <input
+        type="date"
+        id="dob"
+        name="dob"
+        placeholder="input your date of birth"
+      />
+      <br /><br />
+      <label for="gender">Gender</label>
+      <input type="radio" id="gender" name="gender" value="female" />Female
+      <input type="radio" id="gender" name="gender" value="male" />Male
+      <br /><br />
+      <label for="hobbies">Hobbies</label>
+      <input type="checkbox" name="hobbies" value="sports" />Sports
+      <input type="checkbox" name="hobbies" value="music" />music
+      <input type="checkbox" name="hobbies" value="art" />Art
+      <input type="checkbox" name="hobbies" value="travel" />travel <br /><br />
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+        <option>--select country--</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Mali">Mali</option>
+        <option value="DR Cogo">DR Cogo</option>
+      </select>
+      <br /><br />
+      <label for="description">Describe yourself</label>
+      <textarea id="description" name="description"></textarea>
+      <br /><br />
+      <button>Register</button>
+      <input type="button" value="cancel" />
+    </form>
+  </body>
+</html>
